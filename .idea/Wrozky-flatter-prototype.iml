@@ -5,7 +5,11 @@
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/magic_exist/build" />
+      <excludeFolder url="file://$MODULE_DIR$/magic_exist/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/magic_exist/.dart_tool" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
