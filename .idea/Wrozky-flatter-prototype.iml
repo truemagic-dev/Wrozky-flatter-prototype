@@ -9,6 +9,9 @@
       <excludeFolder url="file://$MODULE_DIR$/magic_exist/build" />
       <excludeFolder url="file://$MODULE_DIR$/magic_exist/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/magic_exist/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+      <excludeFolder url="file://$MODULE_DIR$/.pub" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
