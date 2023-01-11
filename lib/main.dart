@@ -11,10 +11,18 @@ class MagicExistApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // var mainColor = Color.fromRGBO(156, 38, 31, 1);
+    var mainColor = Color.fromRGBO(148, 13, 13, 1.0);
+
     return MaterialApp(
       title: 'TEST TITLE',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: mainColor,
+        backgroundColor: Colors.black,
+        textTheme: Theme.of(context).textTheme.apply(
+          bodyColor: mainColor,
+          displayColor: mainColor
+        )
       ),
       home: const MagicExistMainWidget(),
     );
@@ -27,19 +35,21 @@ class MagicExistMainWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      backgroundColor: Theme.of(context).backgroundColor,
+      body: SingleChildScrollView(
+        child: Column(
         children: [
           Row(children: [Expanded(child: MagicExistNavBar())]),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Expanded(child: Placeholder()),
+              // Expanded(child: Container()),
               Expanded(flex: 4, child: MagicExistMainContent()),
-              Expanded(child: Placeholder())
+              // Expanded(child: Container())
             ],
           )
         ],
       ),
-    );
+    ));
   }
 }
