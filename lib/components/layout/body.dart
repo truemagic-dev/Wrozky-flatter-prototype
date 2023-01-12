@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:magic_exist/components/layout/welcome/click_below_button.dart';
+import 'package:magic_exist/components/layout/contact/contact_me_component.dart';
+import 'package:magic_exist/components/layout/feedback/feed_back_component.dart';
+import 'package:magic_exist/components/layout/services/services_main_component.dart';
 import 'package:magic_exist/components/layout/welcome/welcome_main.dart';
+
+import 'about/about_me_main.dart';
 
 class MagicExistMainContent extends StatelessWidget {
   const MagicExistMainContent({
@@ -12,21 +18,11 @@ class MagicExistMainContent extends StatelessWidget {
 
     return Column(children: [
       WelcomeMainComponent(),
-      SizedBox(
-        height: 100,
-        child: IconButton(
-          iconSize: 90,
-            splashRadius: 40,
-            onPressed: () {
-              print("TODO");
-            },
-            icon: Icon(
-                Icons.keyboard_arrow_down,
-                color: theme.primaryColor,
-            )
-        ),
-      ),
-      Placeholder()
+      ClickBelowButton(theme: theme),
+      AboutMeComponent(),
+      ServicesComponent(),
+      FeedBackComponent(),
+      ContactMeComponent()
     ]);
   }
 }
